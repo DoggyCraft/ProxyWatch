@@ -1,0 +1,31 @@
+name: ProxyWatch
+main: dk.fido2603.proxywatch.ProxyWatch
+author: Fido2603
+version: ${project.version}
+description: Keeping the Bungee safer than ever!
+depend: []
+softdepend: []
+website: https://github.com/DoggyCraftDK/ProxyWatch
+commands:
+    proxywatch:
+      description: Command for the ProxyWatch plugin
+      usage: /<command> [help]
+      aliases: [pw]
+permissions:
+    proxywatch.*:
+        description: Gives access to all ProxyWatch commands
+        default: false
+        children:
+            mydog.all: true
+    proxywatch.all:
+        description: Gives access to all ProxyWatch commands
+        default: false
+        children:
+            proxywatch.reload: true
+            proxywatch.save: true
+    proxywatch.reload:
+        description: Player can reload the configuration(s)
+        default: false
+    proxywatch.save:
+        description: Player can save the configuration(s)
+        default: false       

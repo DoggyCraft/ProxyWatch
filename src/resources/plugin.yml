@@ -6,11 +6,6 @@ description: Keeping the Bungee safer than ever!
 depend: []
 softdepend: []
 website: https://github.com/DoggyCraftDK/ProxyWatch
-commands:
-    proxywatch:
-      description: Command for the ProxyWatch plugin
-      usage: /<command> [help]
-      aliases: [pw]
 permissions:
     proxywatch.*:
         description: Gives access to all ProxyWatch commands
